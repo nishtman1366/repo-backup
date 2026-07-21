@@ -1,0 +1,53 @@
+{
+    "name": "nishtman/repo-backup",
+    "description": "A production-ready Laravel package for backing up Git repositories via Artisan commands and schedules.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "package",
+        "backup",
+        "git"
+    ],
+    "homepage": "https://github.com/nishtman/repo-backup",
+    "support": {
+        "issues": "https://github.com/nishtman/repo-backup/issues",
+        "source": "https://github.com/nishtman/repo-backup"
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/cache": "^11.0",
+        "illuminate/console": "^11.0",
+        "illuminate/config": "^11.0",
+        "illuminate/container": "^11.0",
+        "illuminate/database": "^11.0",
+        "illuminate/events": "^11.0",
+        "illuminate/support": "^11.0",
+        "laravel/prompts": "^0.3",
+        "symfony/process": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nishtman\\RepoBackup\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nishtman\\RepoBackup\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nishtman\\RepoBackup\\RepoBackupServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
