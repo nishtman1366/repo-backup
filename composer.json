@@ -9,26 +9,26 @@
         "backup",
         "git"
     ],
-    "homepage": "https://github.com/nishtman/repo-backup",
+    "homepage": "https://github.com/nishtman1366/repo-backup",
     "support": {
-        "issues": "https://github.com/nishtman/repo-backup/issues",
-        "source": "https://github.com/nishtman/repo-backup"
+        "issues": "https://github.com/nishtman1366/repo-backup/issues",
+        "source": "https://github.com/nishtman1366/repo-backup"
     },
     "require": {
         "php": "^8.2",
-        "illuminate/cache": "^11.0",
-        "illuminate/console": "^11.0",
-        "illuminate/config": "^11.0",
-        "illuminate/container": "^11.0",
-        "illuminate/database": "^11.0",
-        "illuminate/events": "^11.0",
-        "illuminate/support": "^11.0",
+        "illuminate/cache": "^11.0 || ^12.0",
+        "illuminate/console": "^11.0 || ^12.0",
+        "illuminate/config": "^11.0 || ^12.0",
+        "illuminate/container": "^11.0 || ^12.0",
+        "illuminate/database": "^11.0 || ^12.0",
+        "illuminate/events": "^11.0 || ^12.0",
+        "illuminate/support": "^11.0 || ^12.0",
         "laravel/prompts": "^0.3",
         "symfony/process": "^7.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^9.0",
-        "phpunit/phpunit": "^10.5"
+        "orchestra/testbench": "^9.0 || ^10.0",
+        "phpunit/phpunit": "^10.5 || ^11.0"
     },
     "autoload": {
         "psr-4": {
