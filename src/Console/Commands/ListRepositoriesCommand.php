@@ -30,7 +30,7 @@ class ListRepositoriesCommand extends Command
                 $repository->getKey(),
                 $repository->title,
                 $repository->url,
-                implode(is_array($repository->backup_branches) ? $repository->backup_branches : [], ', '),
+                implode(', ', is_array($repository->backup_branches) ? $repository->backup_branches : []),
                 $repository->schedule,
                 $repository->enabled ? 'Enabled' : 'Disabled',
                 $lastHistory?->started_at?->toDateTimeString() ?? '—',

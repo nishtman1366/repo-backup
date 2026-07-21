@@ -51,7 +51,7 @@ class AddRepositoryCommand extends Command
         }
 
         $branches = $validation->branches;
-        $selectedBranches = multiselect('Backup branches', $branches, default: $branches[0] ?? null);
+        $selectedBranches = multiselect('Backup branches', $branches, default: [$branches[0]] ?? null);
         $path = text('Local backup path', default: $this->defaultPath($title));
         $schedule = select('Backup schedule', ['hourly', 'daily', 'weekly', 'monthly', 'everyThirtyMinutes', 'custom'], default: 'daily');
         $scheduleValue = $schedule !== 'custom' ? $schedule : text('Custom schedule expression');
